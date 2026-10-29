@@ -79,7 +79,7 @@ CREATE TABLE Telefone_Cliente (
     numero VARCHAR(10) NOT NULL,
     tipo VARCHAR(15) DEFAULT 'Celular',
     CONSTRAINT fk_telefone_cliente FOREIGN KEY id_cliente
-
+);
 
 
 
