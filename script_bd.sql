@@ -71,5 +71,27 @@ create table pagamento(
   nome varchar(255),
   endereco varchar(255)
 );
+
+CREATE TABLE Telefone_Cliente (
+    id_telefone INT AUTO_INCREMENT PRIMARY KEY,
+    id_cliente INT,
+    ddd VARCHAR(3),
+    numero VARCHAR(10) NOT NULL,
+    tipo VARCHAR(15) DEFAULT 'Celular',
+    CONSTRAINT fk_telefone_cliente FOREIGN KEY id_cliente
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
