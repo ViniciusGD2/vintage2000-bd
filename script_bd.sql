@@ -28,24 +28,48 @@ SELECT * FROM cliente;
 
  create table estoque(
 id_estoque serial primary key,
-quantidade int 
-id_produto int 
+quantidade int, 
+id_produto int,
 id_forncedor int
  );
 
  create table produto(
   id_produto serial primary key,
-  nome varchar (200)
-  tendencia varchar (100)
-  novidade boolean
-  preco_base  numeric
-  id_categoria int(8)
+  nome varchar (200),
+  tendencia varchar (100),
+  novidade boolean,
+  preco_base  numeric,
+  id_categoria int(8),
   id_loja int(8)
  );
 
+ create table venda( 
+  id_venda serial primary key,
+  data date,
+  preco decimal,
+  pedido bigint
+
+ );
+
+create table item_venda(
+  id_item_venda serial primary key,
+  id_produto bigint
+);
+
+create table carrinho(
+  nome_produto varchar(255),
+  valor decimal
+);
+
+create table pagamento(
+  tipo varchar(200),
+  valor decimal 
+);
+
  CREATE table loja(
   id_loja serial primary key,
-  nome varchar(255)
-  endereco
+  nome varchar(255),
+  endereco varchar(255)
+);
   
- )
+
