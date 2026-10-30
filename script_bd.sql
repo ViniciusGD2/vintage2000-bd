@@ -80,7 +80,7 @@ CREATE TABLE Telefone_Cliente (
     tipo VARCHAR(15) DEFAULT 'Celular',
     CONSTRAINT fk_telefone_cliente FOREIGN KEY id_cliente
 );
-
+.
 
 
 
