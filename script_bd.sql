@@ -9,7 +9,7 @@ SELECT * FROM fornecedor;
 
 
 
-INSERT INTO fornecedor (nome, cnpj) VALUES ('Raul Enzo Nogueira','25.123.638/0001-40')
+INSERT INTO fornecedor (nome, cnpj) VALUES ('Subaru Natsuki','25.123.638/0001-40')
 
 
 CREATE table cliente(
